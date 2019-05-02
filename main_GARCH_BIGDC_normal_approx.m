@@ -5,7 +5,7 @@
 %
 % GARCH: h_{i,t} = (1 - a_i - b_i) * h_i + a_i * h_{i,t-1} * (u_{i,t-1}^2) + b_i * h_{i,t-1},
 % 
-% GDC top: r_{ij,t} = (1 - e - f) * r_ij + e * q_{ij,t} + f * r_{ij,t-1}, where e+f=1
+% GDC top: r_{ij,t} = (1 - e - f) * r_ij + e * q_{ij,t} + f * r_{ij,t-1},
 %
 % GDC intermediate: q_{ij,t} = x_{ij,t}/sqrt(x_{ii,t} * x_{jj,t}) 
 %
