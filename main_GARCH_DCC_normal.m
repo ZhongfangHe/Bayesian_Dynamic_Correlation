@@ -16,12 +16,12 @@ rng(12345);
 
 %% Inputs
 % Specify directories of auxiliary functions and to write posterior analysis results
-path_name = 'C:\Users\534474366\Documents\Research\DCC GARCH\Mar2019\auxiliary_functions'; %path of auxiliary functions 
-write_path = 'C:\Users\534474366\Documents\Research\DCC GARCH\Mar2019\simulated_data\results_DCC\'; %path to write results; should already exist
+path_name = 'C:\Documents\Research\DCC GARCH\Mar2019\auxiliary_functions'; %path of auxiliary functions 
+write_path = 'C:\Documents\Research\DCC GARCH\Mar2019\simulated_data\results_DCC\'; %path to write results; should already exist
 
 
 % Specify info to read the target data (features are AR lags of targets)
-read_path = 'C:\Users\534474366\Documents\Research\DCC GARCH\Mar2019\simulated_data\'; 
+read_path = 'C:\Documents\Research\DCC GARCH\Mar2019\simulated_data\'; 
 read_info.read_file = [read_path, 'Simulated_Data_DCC.xlsx']; 
 read_info.read_sheet = 'Y';
 read_info.read_cell = 'A2:B301'; %data and the snap date (not the first row)
