@@ -189,8 +189,7 @@ for i = 1:nof_total
             if i > nof_burnin
                 count.absum(i-nof_burnin,j) = 1;
             end
-        end
-%absum(j) = 0.95;        
+        end       
         if i > nof_burnin
             draws.absum(i-nof_burnin,j) = absum(j);
         end
@@ -220,8 +219,7 @@ for i = 1:nof_total
             if i > nof_burnin
                 count.ap(i-nof_burnin,j) = 1;
             end
-        end
-%ap(j) = 0.1/0.95;        
+        end        
         if i > nof_burnin
             draws.ap(i-nof_burnin,j) = ap(j);
         end
@@ -287,8 +285,7 @@ for i = 1:nof_total
         if i > nof_burnin
             count.cdsum(i-nof_burnin) = 1;
         end
-    end  
-%cdsum = 0.95;    
+    end      
     if i > nof_burnin
         draws.cdsum(i-nof_burnin) = cdsum;
     end  
@@ -318,8 +315,7 @@ for i = 1:nof_total
         if i > nof_burnin
             count.cp(i-nof_burnin) = 1;
         end
-    end  
-%cp = 0.05/0.95;    
+    end     
     if i > nof_burnin
         draws.cp(i-nof_burnin) = cp;
     end   
@@ -350,8 +346,7 @@ for i = 1:nof_total
         if i > nof_burnin
             count.efsum(i-nof_burnin) = 1;
         end
-    end  
-%efsum = 0.9;    
+    end     
     if i > nof_burnin
         draws.efsum(i-nof_burnin) = efsum;
     end  
@@ -381,8 +376,7 @@ for i = 1:nof_total
         if i > nof_burnin
             count.ep(i-nof_burnin) = 1;
         end
-    end  
-%ep = 0.4/0.9;    
+    end     
     if i > nof_burnin
         draws.ep(i-nof_burnin) = ep;
     end       
