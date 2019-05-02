@@ -1,13 +1,13 @@
-% Estimate DCC model with normal innovation
+% Estimate cDCC model with normal innovation
 % y_{i,t} = z_{i,t}' * w_i + sqrt(h_{i,t}) * u_{i,t}, i=1,2,...,m; t=1,2,...,T
 %
 % u_{i,t}~N(0,1), cov_{t-1}(u_{i,t},u_{j,t}) = r_{ij,t},
 %
 % GARCH: h_{i,t} = (1 - a_i - b_i) * h_i + a_i * h_{i,t-1} * (u_{i,t-1}^2) + b_i * h_{i,t-1},
 % 
-% DCC top: r_{ij,t} = x_{ij,t}/sqrt(x_{ii,t} * x_{jj,t})
+% cDCC top: r_{ij,t} = x_{ij,t}/sqrt(x_{ii,t} * x_{jj,t})
 %
-% DCC bottom: x_{ij,t} = (1 - c_ij - d_ij) * x_ij + c_ij * u_{i,t-1} * u_{j,t-1} + d_ij * x_{ij,t-1},
+% cDCC bottom: x_{ij,t} = (1 - c_ij - d_ij) * x_ij + c_ij * sqrt(x_{ii,t-1}*x_{jj,t-1}) * u_{i,t-1} * u_{j,t-1} + d_ij * x_{ij,t-1},
 
 
 function [draws,count] = MCMC_GARCH_cDCC_normal(y, z, z_coef, garch, dcc, df, nof_burnin, nof_draws)
