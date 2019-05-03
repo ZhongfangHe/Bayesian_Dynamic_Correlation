@@ -8,7 +8,7 @@ Note that asset returns are assumed to follow normal distributions. Fat-tailed o
 # How to Use the Codes
 Users only need to modify the "main_*.m" files to estimate the various correlation models; the other files are auxiliary functions and should not be modified. 
 
-Each "main_*.m" file has comments at the start that describes the model. As the same notations of the parameters are used in the main body of the code, users should read the model description to understand the meaning of the variables in the code and to use the model outputs properly. 
+Each "main_*.m" file has comments at the start that describe the model. As the same notations of the parameters are used in the main body of the code, users should read the model description to understand the meaning of the variables in the code and to use the model outputs properly. 
 
 There is a double %% comment section "Inputs" that would require the users' inputs such as where to find the data spreadsheets (Excel), the hyper-parameters of the prior distributions, the tuning parameters to adjust the random-walk proposals in the Metropolis-Hastings steps, and where to write the output files (CSV). Each input variable has a in-line comment that describes the variable. Except for the "Inputs" section, other parts of the code should not be modified. The variable "draws" will contain the posterior draws of the model variables.
 
