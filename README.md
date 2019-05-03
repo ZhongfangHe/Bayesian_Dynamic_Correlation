@@ -1,4 +1,4 @@
-# Bayesian Dynamic Correlation Models
+# Introduction
 A collection of Matlab codes that perform MCMC estimation of a number of dynamic correlation models, including three existing models: DCC (Engle 2002), VC (Tse and Tsui 2002), cDCC (Aielli 2013) and four versions of the proposed new model: GDC, top-integrated GDC (TIGDC), bottom-integrated GDC (BIGDC), both-levels-integrated GDC (IGDC). 
 
 The DCC and VC models are the benchmarks. They each find a structure to summarize information in asset returns dynamically. The summarized information then goes through a normalization to ensure the constraint of a correlation matrix: positive definite with unit diagonal elements. The cDCC model builds on the DCC model to solve an estimation problem (in practice correlation estimates from the DCC and cDCC models are pretty close). The proposed GDC model is a generalization of the DCC and VC models and nests them as special cases. Details of the GDC model can be found in my working paper "A Class of Generalized Dynamic Correlation Models".
